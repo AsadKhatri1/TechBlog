@@ -72,7 +72,7 @@ if (signup) {
                     }
 
                     await setDoc(doc(db, "users", user.uid), userData).then(()=>{
-                        window.location.href = 'https://asadkhatri1.github.io/TechBlog/dist/login.html'
+                        window.open( 'https://asadkhatri1.github.io/TechBlog/dist/login.html')
                     });
 
                
@@ -100,7 +100,7 @@ if (signup) {
 // -------------Login Start------------
 
 if (localStorage.token && localStorage.id) {
-    window.location.href = 'https://asadkhatri1.github.io/TechBlog/dist/index.html'
+    window.open( 'https://asadkhatri1.github.io/TechBlog/dist/index.html')
 }
 
 let loginform = document.querySelector('.login')
@@ -120,7 +120,7 @@ if (loginform) {
                 )
 
                 if (localStorage.token && localStorage.id) {
-                    window.location.href = 'https://asadkhatri1.github.io/TechBlog/dist/index.html'
+                    window.open('https://asadkhatri1.github.io/TechBlog/dist/index.html')
                 }
                 // ...
             })
